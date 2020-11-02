@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+$hover-color: #c49029;
+$gray-color: #777777;
+
+body {
+  color: $gray-color;
+  font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+}
+
+.container {
+  width: 1035px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  margin-top: 65px;
+  margin-bottom: 90px;
+
+  .container {
+    height: 65px;
+  }
+
+  .obj-left {
+    float: left;
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  }
+
+  .obj-right {
+    float: right;
+    height: 65px;
+    position: relative;
+
+    .gnav {
+      position: absolute;
+      right: 170px;
+      bottom: 5px;
+      width: 550px;
+
+      > li {
+        float: left;
+        margin: 0 18px;
+        padding-bottom: 20px;
+        position: relative;
+        top: 20px;
+
+        a {
+          font-size: 16.884px;
+          color: black;
+          transition: all .3s;
+        }
+
+        ul {
+          position: absolute;
+          width: 300px;
+          margin-top: 20px;
+          left: -20px;
+          line-height: 54px;
+          visibility: hidden;
+          opacity: 0;
+          transition: all .3s;
+          background-color: white;
+
+          li {
+            padding-left: 20px;
+            border: 1px solid #e6e6e6;
+          }
+
+        }
+      }
+
+      > li:hover {
+        > a {
+          color: $hover-color;
+        }
+
+        ul {
+          visibility: visible;
+          opacity: 1;
+
+          a:hover {
+            color: $hover-color;
+          }
+        }
+      }
+    }
+
+  }
+
+  .header-search {
+    float: right;
+    position: relative;
+    height: 65px;
+
+    .search-icon {
+      position: absolute;
+      right: 0;
+      bottom: 3px;
+      font-size: 26px;
+      cursor: pointer;
+      z-index: 10;
+      transition: all .3s;
+      pointer-events: none;
+    }
+
+    .search-box {
+      position: absolute;
+      right: 0;
+      bottom: -8px;
+      z-index: 9;
+      padding: 10px 0;
+      padding-left: 30px;
+      width: 26px;
+      transition: all .3s;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .search-box:focus {
+      outline: none;
+      width: 226px;
+      visibility: visible;
+      border: 1px solid $gray-color;
+      cursor: text;
+
+      + .search-icon {
+        right: 200px;
+      }
+    }
+  }
+}

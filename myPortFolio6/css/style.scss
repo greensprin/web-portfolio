@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  border-top: solid 8px #6CC6C4;
+  background-color: #f6f6f6;
+}
+
+.container {
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  height: 130px;
+  .container {
+    display: flex;
+    position: relative;
+
+    img {
+      margin-top: 3rem;
+    }
+    
+    .content-right {
+      width: 220px;
+      text-align: center;
+      position: absolute;
+      right: 0rem;
+      
+      p {
+        font-size: 10.01px;
+        width: 100%;
+        color: gray;
+      }
+
+      .head-txt {
+        margin: 15px 0;
+      }
+
+      .head-tel {
+        font-size: 25.61px;
+        // margin-bottom: 10px;
+
+        span {
+          margin-right: 10px;
+        }
+      }
+
+      .head-date {
+        text-align: center;
+        border: solid 1px #D6D6D6;
+        padding: 5px 0;
+
+        .col-red {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+.menu-bar {
+  li {
+    list-style: none;
+    text-shadow: 1px 1px 2px #6cc6c4;
+  }
+
+  ul {
+    display: flex;
+    border: solid 1px rgb(108, 198, 196);
+    border-radius: 6px;
+    // background-color: rgb(153, 225, 223);
+
+    li {
+      width: 20%;
+      height: 70px;
+      text-align: center;
+      padding: 18px 0;
+      border-right: 1px black solid;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      display: block;
+      background-image:  linear-gradient(rgb(156,227,225) 0%,rgb(108,198,196) 100%);
+      border-right: #71c9c7 solid 1px;
+      border-left: #99e1df solid 1px;
+
+      .ja-txt {
+        font-size: 14px;
+      }
+
+      .en-txt {
+        font-size: 10px;
+      }
+    }
+
+    li:hover {
+      background-image:  linear-gradient(rgb(108,198,196) 0%,rgb(156,227,225) 100%);
+      color: rgb(193, 255, 255);
+    }
+
+    li.first {
+      border-radius: 6px 0 0 6px;
+    }
+
+    li.last {
+      border-radius: 0 6px 6px 0;
+    }
+
+  }
+}
+
+.top-wrapper {
+  margin-top: 20px;
+  .container {
+    position: relative;
+
+    .main-menu {
+      position: absolute;
+      left: 280px;
+    }
+
+    .side-menu-item {
+      width: 260px;
+      position: absolute;
+      left: 0rem;
+
+      p {
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(153, 225, 223);
+        border-radius: 5px 5px 0 0;
+        color: white;
+        font-weight: bold;
+      }
+
+      ul {
+        padding-left: 40px;
+        border: 1px solid rgb(153, 225, 223);
+
+        li {
+          margin: 10px;
+          border-bottom: 1px solid rgb(153, 225, 223);
+
+        }
+
+        .list-last {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+}

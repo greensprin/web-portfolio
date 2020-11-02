@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Airbnbでお家、アパート、お部屋をシェアしよう</title>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <!-- icon -->
+        <link rel="icon" type="image/png" href="img/airbnb-icon.png">
+        <!-- <img src="img/airbnb-icon.png" alt="icon" href="#" width=30 height=35> -->
+        <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:34px;width:34px;fill:#008489">
+          <path d="m 499.3 736.7 c -51 -64 -81 -120.1 -91 -168.1 c -10 -39 -6 -70 11 -93 c 18 -27 45 -40 80 -40 s 62 13 80 40 c 17 23 21 54 11 93 c -11 49 -41 105 -91 168.1 Z m 362.2 43 c -7 47 -39 86 -83 105 c -85 37 -169.1 -22 -241.1 -102 c 119.1 -149.1 141.1 -265.1 90 -340.2 c -30 -43 -73 -64 -128.1 -64 c -111 0 -172.1 94 -148.1 203.1 c 14 59 51 126.1 110 201.1 c -37 41 -72 70 -103 88 c -24 13 -47 21 -69 23 c -101 15 -180.1 -83 -144.1 -184.1 c 5 -13 15 -37 32 -74 l 1 -2 c 55 -120.1 122.1 -256.1 199.1 -407.2 l 2 -5 l 22 -42 c 17 -31 24 -45 51 -62 c 13 -8 29 -12 47 -12 c 36 0 64 21 76 38 c 6 9 13 21 22 36 l 21 41 l 3 6 c 77 151.1 144.1 287.1 199.1 407.2 l 1 1 l 20 46 l 12 29 c 9.2 23.1 11.2 46.1 8.2 70.1 Z m 46 -90.1 c -7 -22 -19 -48 -34 -79 v -1 c -71 -151.1 -137.1 -287.1 -200.1 -409.2 l -4 -6 c -45 -92 -77 -147.1 -170.1 -147.1 c -92 0 -131.1 64 -171.1 147.1 l -3 6 c -63 122.1 -129.1 258.1 -200.1 409.2 v 2 l -21 46 c -8 19 -12 29 -13 32 c -51 140.1 54 263.1 181.1 263.1 c 1 0 5 0 10 -1 h 14 c 66 -8 134.1 -50 203.1 -125.1 c 69 75 137.1 117.1 203.1 125.1 h 14 c 5 1 9 1 10 1 c 127.1 0.1 232.1 -123 181.1 -263.1 Z"></path>
+        </svg>
+        <!-- list -->
+        <ul class="nav-list">
+          <li class="current-page"><a href="#">概要</a></li>
+          <li><a href="#">準備</a></li>
+          <li><a href="#">安全</a></li>
+          <li><a href="#">マネープラン</a></li>
+        </ul>
+      </div>
+      <div class="header-right">
+        <!-- start button -->
+        <p>はじめる</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="top-wrapper">
+    <div class="top-container">
+      <div class="login-content">
+        <h1>Airbnbホストになって、暮らしをレベルアップ</h1>
+        <p>宿泊施設の内容を記入</p>
+        <div class="input-form">
+          <input type="text" class="address" placeholder="ロケーション" value="Yao">
+          <div class="input-row">
+            <select name="localtion" id="" class="room-option">
+              <option value="all-rent">まるまる貸し切り</option>
+              <option value="private-room">個室</option>
+              <option value="share-room">シェアルーム</option>
+            </select>
+            <select name="number" id="" class="room-number">
+              <option value="1">ゲスト1人</option>
+              <option value="2">ゲスト2人</option>
+              <option value="3">ゲスト3人</option>
+              <option value="4">ゲスト4人</option>
+              <option value="5">ゲスト5人</option>
+              <option value="6">ゲスト6人</option>
+              <option value="7">ゲスト7人</option>
+              <option value="8">ゲスト8人</option>
+              <option value="9">ゲスト9人</option>
+              <option value="10">ゲスト10人</option>
+              <option value="11">ゲスト11人</option>
+              <option value="12">ゲスト12人</option>
+              <option value="13">ゲスト13人</option>
+              <option value="14">ゲスト14人</option>
+              <option value="15">ゲスト15人</option>
+              <option value="16">ゲスト16人</option>
+            </select>
+          </div>
+        </div>
+        <a href="#">はじめる</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-down-wrapper">
+    <div class="container">
+      <div class="text-content">
+        <h1>Airbnbでホストするこれだけの理由</h1>
+        <p>どんなお家やお部屋でも、Airbnbなら簡単かつ安全にシェアでき、世界中の旅好きな仲間とつながれます。 予約可能日から料金、ハウスルール、ゲストとの交流程度まで、すべて自分で決めることができます。</p>
+      </div>
+      <div class="text-content">
+        <h1>困ったときも安心</h1>
+        <p>万一に備えるUS$1,000,000の財物補償、US$1,000,000の賠償責任保険が全予約に自動付帯。ホストのみなさまと建物・家財の安全をお守りするため全力で取り組んでいます。</p>
+      </div>
+    </div>
+    <div class="under-line"></div>
+  </div>
+
+  <div class="main-wrapper">
+    <div class="container">
+      <h1>3ステップでホスティング</h1>
+      <div class="check-three-items">
+        <div class="check-item">
+          <svg viewBox="0 0 32 32" role="presentation" aria-hidden="true" focusable="false" style="height:48px;width:48px;display:block;fill:currentColor">
+            <path d="m 16 31 c -8.28 0 -15 -6.72 -15 -15 s 6.72 -15 15 -15 s 15 6.72 15 15 s -6.72 15 -15 15 m 0 -31 c -8.84 0 -16 7.16 -16 16 s 7.16 16 16 16 s 16 -7.16 16 -16 s -7.16 -16 -16 -16 m 5.71 12.29 c 0.39 0.39 0.39 1.02 0 1.41 l -6 6 c -0.39 0.39 -1.02 0.39 -1.41 0 l -3 -3 c -0.39 -0.39 -0.39 -1.02 0 -1.41 s 1.02 -0.39 1.41 0 l 2.29 2.29 l 5.29 -5.29 c 0.39 -0.39 1.02 -0.39 1.41 0"></path>
+          </svg>
+          <h2>無料でお部屋を掲載</h2>
+          <p>共有のリビングルームから別荘に至るまで、どんなスペースでも登録料なしで共有しましょう。</p>
+        </div>
+        <div class="check-item">
+          <svg viewBox="0 0 32 32" role="presentation" aria-hidden="true" focusable="false" style="height:48px;width:48px;display:block;fill:currentColor">
+            <path d="m 16 31 c -8.28 0 -15 -6.72 -15 -15 s 6.72 -15 15 -15 s 15 6.72 15 15 s -6.72 15 -15 15 m 0 -31 c -8.84 0 -16 7.16 -16 16 s 7.16 16 16 16 s 16 -7.16 16 -16 s -7.16 -16 -16 -16 m 5.71 12.29 c 0.39 0.39 0.39 1.02 0 1.41 l -6 6 c -0.39 0.39 -1.02 0.39 -1.41 0 l -3 -3 c -0.39 -0.39 -0.39 -1.02 0 -1.41 s 1.02 -0.39 1.41 0 l 2.29 2.29 l 5.29 -5.29 c 0.39 -0.39 1.02 -0.39 1.41 0"></path>
+          </svg>
+          <h2>ホスティング方法を設定</h2>
+          <p>スケジュール、料金、ゲストへの要件をご自身で選択しましょう。 お困りの際にはいつでもサポートいたします。</p>
+        </div>
+        <div class="check-item">
+          <svg viewBox="0 0 32 32" role="presentation" aria-hidden="true" focusable="false" style="height:48px;width:48px;display:block;fill:currentColor">
+            <path d="m 16 31 c -8.28 0 -15 -6.72 -15 -15 s 6.72 -15 15 -15 s 15 6.72 15 15 s -6.72 15 -15 15 m 0 -31 c -8.84 0 -16 7.16 -16 16 s 7.16 16 16 16 s 16 -7.16 16 -16 s -7.16 -16 -16 -16 m 5.71 12.29 c 0.39 0.39 0.39 1.02 0 1.41 l -6 6 c -0.39 0.39 -1.02 0.39 -1.41 0 l -3 -3 c -0.39 -0.39 -0.39 -1.02 0 -1.41 s 1.02 -0.39 1.41 0 l 2.29 2.29 l 5.29 -5.29 c 0.39 -0.39 1.02 -0.39 1.41 0"></path>
+          </svg>
+          <h2>はじめてのゲストが来ます！</h2>
+          <p>リスティングが掲載されると、条件にかなったゲストから連絡を受けとることができます。 ゲストの到着前に質問があればメッセージを送信できます。</p>
+          <a href="#">ホストを始める方法をチェック</a>
+        </div>
+      </div>
+      <div class="img-txt-content">
+        <div class="txt-content">
+          <h3>“</h3>
+          <p class="main-txt">「ホスト保証」があったからAirbnb参加を決めたといっても過言でないほどで、被害やトラブルがあったときに頼れるサポートがあるのは本当にありがたいですね。</p>
+          <p class="sub-txt">Dennisさんはロンドンのホスト。自由度の高さに魅力を感じています</p>
+          <a href="#" class="btn-txt">ホスト実践例をチェック</a>
+        </div>
+        <img src="img/8e6c68cc-e714-4849-bad9-464abf58e84a.jpg" alt="person1">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

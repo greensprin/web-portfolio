@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+}
+
+li {
+  list-style: none;
+}
+
+.fa {
+  cursor: pointer;
+  color: gray;
+  transition: all 0.3s;
+}
+
+.fa:hover {
+  color: black;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1035px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 70px;
+
+  .container {
+    display: flex;
+  }
+
+  .content-left {
+    a {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 18px;
+      color: gray;
+    }
+  }
+
+  .content-center {
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+
+    a {
+      font-size: 16px;
+      margin: 0 15px;
+      display: inline-block;
+      transition: all 0.3s;
+    }
+
+    a:hover {
+      color: #c49029;
+    }
+
+  }
+
+  .content-right {
+    display: flex;
+    align-items: flex-end;
+    font-size: 25px;
+
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+.top-wrapper {
+  .container {
+    img {
+      margin: 80px 0;
+    }
+
+    h1 {
+      margin: 15px 0;
+      font-weight: normal;
+      font-size: 25px;
+      color: gray;
+    }
+  }
+}
+
+.blog-wrapper {
+  margin: 110px 0;
+
+  .blog-item {
+    display: flex;
+    margin-bottom: 85px;
+
+    $content-size: 30%;
+
+    .date {
+      color: gray;
+      width: $content-size;
+    }
+
+    .text-content {
+      width: 100% - $content-size;
+      h1 {
+        font-size: 25px;
+      }
+
+      p {
+        margin-top: 32px;
+        font-size: 16px;
+        color: gray;
+      }
+    }
+
+    .page-container {
+      width: 100% $content-size;
+
+      .page-num {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+
+        p {
+          height: 45px;
+          line-height: 45px;
+          padding: 0 20px;
+          margin: 0 5px;
+          border: solid 1px gray;
+          text-align: center;
+          color: gray;
+          cursor: pointer;
+        }
+
+        .current-page {
+          background-color: rgba(205, 200, 200, 0.5);
+          color: black;
+          cursor: default;
+        }
+      }
+    }
+  }
+
+}
+
+.profile-wrapper {
+  .container {
+    border-top: solid 1px gray;
+    padding: 70px 0;
+    color: gray;
+    display: flex;
+
+    $item-left-width: 30%;
+
+    .item-left {
+      width: $item-left-width;
+      margin-right: 85px;
+
+      .profile-img-text {
+        display: flex;
+        height: 100px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        img {
+          width: 100px;
+          border-radius: 50%;
+        }
+
+        .name-sns {
+          margin: 30px 25px;
+
+          h1 {
+            color: black;
+            font-size: 18px;
+          }
+
+          span {
+            font-size: 28px;
+            margin: 5px;
+          }
+        }
+      }
+    }
+
+    .item-right {
+      width: 100% - $item-left-width;
+      display: flex;
+
+      .item-center1 {
+        width: 33%;
+        padding-right: 45px;
+        h1 {
+          color: black;
+          font-size: 16px;
+          margin-bottom: 45px;
+        }
+
+        h2 {
+          font-size: 16px;
+          font-weight: normal;
+          text-decoration: underline;
+          cursor: pointer;
+          transition: all 0.3s;
+        }
+
+        h2:hover {
+          color: #c49029;
+        }
+
+        .text-content {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  .container {
+    border-top: solid 1px gray;
+    padding: 70px 0;
+    display: flex;
+    color: gray;
+
+    .footer-icon {
+      font-size: 28px;
+
+      span {
+        margin: 0 5px;
+      }
+    }
+
+    .ink-footer {
+      margin: 0 auto;
+
+      span {
+        color: gray;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      span:hover {
+        color: black;
+      }
+    }
+
+  }
+}
+
+.home-menu {
+  position: relative;
+
+  .menu-bar-1 {
+    position: absolute;
+    top: 32px;
+    border: solid 1px gray;
+    width: 200px;
+    display: none;
+    
+    p {
+      padding: 12px 16px;
+    }
+  }
+}

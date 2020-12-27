@@ -1,0 +1,363 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  background-color: gray;
+  color: white;
+
+  .h-container {
+    max-width: 1650px;
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .content-left {
+    background-color: gray;
+    float: left;
+
+    img {
+      opacity: 1;
+      transition: all .3s ease;
+    }
+
+    a:hover {
+      img {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .content-right {
+    background-color: gray;
+    float: right;
+    line-height: 80px;
+
+    li {
+      float: left;
+      margin: 0 20px;
+
+      a {
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      a:after {
+        content: '';
+        width: 100%;
+        transition: all .3s ease;
+        border-bottom: 2px solid white;
+        display: block;
+        opacity: 0;
+
+        position: absolute;
+        bottom: 0px;
+      }
+
+      a:hover:after {
+        opacity: 1;
+      }
+
+
+    }
+
+  }
+
+}
+
+.container {
+  max-width: 815px;
+  width: 100%;
+}
+
+.item-header {
+  .item-name {
+    font-size: 30px;
+    float: left;
+  }
+
+  .detail-btn {
+    color: black;
+    float: right;
+    line-height: 45px;
+    width: 160px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 14px;
+    transition: all .3s;
+    position: relative;
+  }
+
+  .detail-btn:after {
+    content: '';
+    position: absolute;
+    right: 7px;
+    top: 15px;
+    width: 9px;
+    height: 15px;
+    background-image: url(../img/button-arrow@2x.png);
+    background-size: cover;
+    vertical-align: middle;
+    transition: all .2s;
+  }
+
+  .detail-btn:hover {
+    background-color:black;
+    color: white;
+  }
+
+  .detail-btn:hover:after {
+    filter: invert(100%);
+  }
+}
+
+
+$content-height: 1000px;
+
+.content1 {
+  background-color:#F6f6f6;
+  font-size: 20px;
+  height: $content-height;
+
+  .container {
+    max-width: 400px;
+    width: 100%;
+
+    p {
+      padding: 10px 0;
+      line-height: 40px;
+    }
+
+    .trip-midasi {
+      text-align: center;
+      padding: 60px 0;
+      font-size: 44px;
+    }
+
+    .mid-midasi {
+      text-align: center;
+      margin: 35px 0;
+      font-size: 30px;
+      position: relative;
+      font-weight: bold;
+    }
+
+    .mid-midasi:before {
+      content: '';
+      position: absolute;
+      left: 25%;
+      top: -10px;
+      width: 8px;
+      height: 30px;
+      border-top: 1px solid black;
+      border-left: 1px solid black;
+    }
+
+    .mid-midasi:after {
+      content: '';
+      position: absolute;
+      right: 26%;
+      bottom: -7px;
+      width: 10px;
+      height: 30px;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+  }
+}
+
+.item {
+  cursor: pointer;
+  transition: all .3s;
+}
+.item:hover {
+  opacity: 0.7;
+}
+
+.content2 {
+  background-color:white;
+  height: $content-height + 305px;
+
+  .container {
+    padding-top: 100px;
+
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      .item {
+        width: 30.0%;
+        margin: 35px 12px;
+        img {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          letter-spacing: 5px;
+        }
+      }
+    }
+  }
+}
+
+.content3 {
+  background-color:#F6f6f6;
+  height: 2240px;
+
+  .container {
+    padding: 100px 0;
+
+    $left-item-width: 45%;
+    .items {
+      margin-top: 60px;
+      .item {
+        display: flex;
+        margin: 80px 0;
+        .left-item {
+          width: $left-item-width;
+          img {
+            width: 90%;
+          }
+        }
+        .right-item {
+          width: 100% - $left-item-width;
+          h1 {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 3px;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  .footer-sns {
+    text-align: center;
+
+    .sns-btn {
+      margin: 35px 15px;
+      display: inline-block;
+      width: 180px;
+      line-height: 50px;
+      text-align: center;
+      transition: all .5s;;
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  $facebook-color: #4871a9;
+  $twitter-color: #70bdd3;
+  $hatena-color: #2f9bcd;
+  .facebook-btn {
+    border: 1px solid $facebook-color;
+    a {
+      color: $facebook-color;
+    }
+  }
+  .facebook-btn:hover {
+    background-color: $facebook-color;
+    a {
+      color: white;
+    }
+  }
+  .twitter-btn {
+    border: 1px solid $twitter-color;
+    a {
+      color: $twitter-color;
+    }
+  }
+  .twitter-btn:hover {
+    background-color: $twitter-color;
+    a {
+      color: white;
+    }
+  }
+  .hatena-btn {
+    border: 1px solid $hatena-color;
+    a {
+      color: $hatena-color;
+    }
+  }
+  .hatena-btn:hover {
+    background-color: $hatena-color;
+    a {
+      color: white;
+    }
+  }
+
+  .footer-nav {
+    background-color: #939899;
+    height: 90px;
+    text-align: center;
+    li {
+      display: inline-block;
+      line-height: 90px;
+      margin: 0 20px;
+    }
+  }
+
+  .footer-icon {
+    background-color: #656c6e;
+    height: 160px;
+
+    .left-content {
+      float: left;
+      line-height: 160px;
+      img {
+        width: 100px;
+        height: 100px;
+        transition: all .3s;
+      }
+
+      a:hover {
+        img {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .right-content {
+      float: right;
+      line-height: 160px;
+      font-size: 10px;
+      color: white;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.float-clear {
+  clear: both;
+}

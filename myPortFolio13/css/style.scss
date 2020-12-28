@@ -21,8 +21,13 @@ a:hover {
 }
 
 header {
-  background-color: gray;
+  // background-color: gray;
+  background-size: 100%;
   color: white;
+
+  .hbg-menu {
+    display: none;
+  }
 
   .h-container {
     max-width: 1650px;
@@ -33,7 +38,7 @@ header {
   }
 
   .content-left {
-    background-color: gray;
+    // background-color: gray;
     float: left;
 
     img {
@@ -49,7 +54,7 @@ header {
   }
 
   .content-right {
-    background-color: gray;
+    // background-color: gray;
     float: right;
     line-height: 80px;
 
@@ -258,6 +263,8 @@ $content-height: 1000px;
 }
 
 footer {
+  position: relative;
+
   .footer-sns {
     text-align: center;
 
@@ -275,6 +282,25 @@ footer {
       }
     }
   }
+
+  .goto-top {
+    position: absolute;
+    top: -25px;
+    left: 49%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: white;
+    text-align: center;
+    transition: all .3s;
+    cursor: pointer;
+  }
+
+  .goto-top:hover {
+    top: -30px;
+  }
+  
   $facebook-color: #4871a9;
   $twitter-color: #70bdd3;
   $hatena-color: #2f9bcd;
@@ -360,4 +386,46 @@ footer {
 
 .float-clear {
   clear: both;
+}
+
+@media screen and (max-width: 959px) {
+  header {
+    .hbg-menu {
+      display: block;
+      background-color: white;
+      color: black;
+      cursor: pointer;
+    }
+
+    .content-left {
+      float: none;
+    }
+
+    .content-right {
+      float: none;
+      ul {
+        margin: 0;
+        padding: 0;
+        display: none;
+
+        li {
+          float: none;
+          background-color: rgba(128,128,128,0.5);
+          margin: 0;
+          padding: 0;
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+
+          a:after {
+            opacity: 1.0;
+            border-bottom: 1px solid white;
+          }
+        }
+      }
+    }
+  }
 }

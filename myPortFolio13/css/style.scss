@@ -22,7 +22,8 @@ a:hover {
 
 header {
   // background-color: gray;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center center;
   color: white;
 
   .hbg-menu {
@@ -390,6 +391,12 @@ footer {
 
 @media screen and (max-width: 959px) {
   header {
+    .h-container {
+      width: 100%;
+      position: relative;
+      padding: 0;
+    }
+
     .hbg-menu {
       display: block;
       background-color: white;
@@ -399,10 +406,14 @@ footer {
 
     .content-left {
       float: none;
+      position: absolute;
+      top: 380px;
+      left: 13%;
     }
 
     .content-right {
       float: none;
+      line-height: 50px;
       ul {
         margin: 0;
         padding: 0;
@@ -410,7 +421,7 @@ footer {
 
         li {
           float: none;
-          background-color: rgba(128,128,128,0.5);
+          background-color: rgba(0,0,0,0.8);
           margin: 0;
           padding: 0;
 

@@ -215,7 +215,7 @@ header {
 
 .contact {
   background-color: #F0F0F0;
-  height: 468px;
+  height: 570px;
   .sm-container {
     .left-content {
       float: left;
@@ -258,6 +258,88 @@ footer {
 
 // tablet
 @media screen and (max-width: 1020px) and (min-width: 768px) {
+  header {
+    .left-content {
+      margin: 33px 25px;
+    }
+
+    .right-content {
+      margin: 33px 25px;
+    }
+  }
+
+  .top-banner {
+    $top-banner-height: 1024px;
+    height: $top-banner-height;
+
+    img {
+      width: 600px;
+      height: 890px;
+      object-fit: cover;
+    }
+    .bg-shape {
+      width: 562px;
+      height: $top-banner-height;
+    }
+
+    .top-text-content {
+      top: 330px;
+      right: 80px;
+
+      h1 {
+        font-size: 16px;
+      }
+
+      .big-string {
+        padding-top: 25px;
+      }
+
+      h2 {
+        font-size: 56px;
+        font-weight: 900;
+        padding-top: 0px;
+      }
+    }
+  }
+
+  .about-us {
+    height: 560px;
+    .sm-container {
+      top: 80px;
+      img {
+        width: 100%;
+        height: 479px;
+      }
+      .text-content {
+        top: 35px;
+        left: 40px;
+      }
+    }
+  }
+
+  .works-culture {
+    padding: 60px 0 40px 30px;
+
+    .sm-container {
+      .item-left {
+        margin-bottom: 80px;
+      }
+
+      .item {
+        h1 {
+          font-weight: 900;
+        }
+      }
+    }
+  }
+
+  .latest-topics {
+    .sm-container {
+      .topics, .more-btn {
+        margin-left: 0;
+      }
+    }
+  }
 }
 
 // smart phone

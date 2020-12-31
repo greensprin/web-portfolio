@@ -26,8 +26,13 @@ header {
   background-position: center center;
   color: white;
 
+  .smart-logo {
+    display: none;
+  }
+
   .hbg-menu {
     display: none;
+    padding-left: 20px;
   }
 
   .h-container {
@@ -66,6 +71,10 @@ header {
       a {
         position: relative;
         padding-bottom: 10px;
+      }
+
+      a:after {
+        display: none;
       }
 
       a:after {
@@ -282,6 +291,10 @@ footer {
         height: 100%;
       }
     }
+
+    .line-btn {
+      display: none;
+    }
   }
 
   .goto-top {
@@ -305,6 +318,7 @@ footer {
   $facebook-color: #4871a9;
   $twitter-color: #70bdd3;
   $hatena-color: #2f9bcd;
+  $line-color: #8ec09d;
   .facebook-btn {
     border: 1px solid $facebook-color;
     a {
@@ -337,6 +351,18 @@ footer {
   }
   .hatena-btn:hover {
     background-color: $hatena-color;
+    a {
+      color: white;
+    }
+  }
+  .line-btn {
+    border: 1px solid $line-color;
+    a {
+      color: $line-color;
+    }
+  }
+  .line-btn:hover {
+    background-color: $line-color;
     a {
       color: white;
     }
@@ -391,6 +417,16 @@ footer {
 
 @media screen and (max-width: 959px) {
   header {
+    $nav-height: 50px;
+
+    .desktop-logo {
+      display: none;
+    }
+
+    .smart-logo {
+      display: block;
+    }
+
     .h-container {
       width: 100%;
       position: relative;
@@ -400,20 +436,26 @@ footer {
     .hbg-menu {
       display: block;
       background-color: white;
-      color: black;
+      color:gray; 
       cursor: pointer;
+
+      .fa-bars {
+        float: right;
+        line-height: $nav-height;
+        padding-right: 20px;
+      }
     }
 
     .content-left {
       float: none;
       position: absolute;
-      top: 380px;
-      left: 13%;
+      top: 330px;
+      left: 23%;
     }
 
     .content-right {
       float: none;
-      line-height: 50px;
+      line-height: $nav-height;
       ul {
         margin: 0;
         padding: 0;
@@ -429,13 +471,194 @@ footer {
             display: block;
             width: 100%;
             height: 100%;
+            border-bottom: 1px solid white;
+            padding-left: 20px;
+            padding-bottom: 0px;
+            font-family: "Gill Sans Std Book";
+            font-size: 14px;
           }
 
           a:after {
-            opacity: 1.0;
-            border-bottom: 1px solid white;
+            display: none;
           }
         }
+      }
+    }
+  }
+
+  .content1 {
+    font-size: 15px;
+    height: 750px;
+
+    .container {
+      .trip-midasi {
+        text-align: left;
+        padding: 45px 0;
+        font-size: 36px;
+      }
+
+      p {
+        line-height: 30px;
+        padding: 0;
+      }
+    }
+  }
+
+  .content2 {
+    height: 3400px;
+    position: relative;
+    .container {
+
+      .item-header {
+        .item-name {
+          float: none;
+          text-align: center;
+        }
+
+        .detail-btn {
+          float: none;
+          position: absolute;
+          bottom: 50px;
+          left: 30%;
+        }
+      }
+
+      .items {
+        display: block;
+        .item {
+          width: 95%;
+
+          img {
+            margin: 0;
+          }
+
+          p {
+            font-size: 18px;
+            letter-spacing: 1px;
+            padding-left: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .content3 {
+    height: 2600px;
+    position: relative;
+    .container {
+      width: 330px;
+      padding: 70px 0;
+
+      .item-header {
+        .item-name {
+          float: none;
+          text-align: center;
+        }
+
+        .detail-btn {
+          float: none;
+          position: absolute;
+          bottom: 50px;
+          left: 30%;
+        }
+      }
+
+      .text-content {
+        display: none;
+      }
+
+      .items {
+        display: block;
+        .item {
+          width: 100%;
+          display: block;
+
+          .left-item {
+            width: 100%;
+            text-align: center;
+            img {
+              margin: 0;
+              width: 100%;
+            }
+          }
+
+          .right-item {
+            width: 100%;
+
+            h1 {
+              padding-top: 20px;
+              line-height: 30px;
+              font-size: 18px;
+              letter-spacing: 2px;
+            }
+
+            p {
+              font-size: 5px;
+              letter-spacing: 1px;
+              padding-left: 0px;
+            }
+          }
+
+
+        }
+      }
+    }
+  }
+
+  footer {
+    .goto-top {
+      left: 44%;
+    }
+
+    .goto-top:hover {
+      top: -30px;
+    }
+
+    .footer-sns {
+      padding: 30px 0;
+      font-size: 13px;
+      letter-spacing: 1px;
+      .sns-btn {
+        display: inline-block;
+        width: 40%;
+        margin: 4px 4px;
+      }
+
+      .line-btn {
+        display: inline-block;
+      }
+    }
+
+    .footer-nav {
+      height: 350px;
+      ul {
+        padding: 0;
+        li {
+          margin: 0;
+          width: 100%;
+          display: block;
+          border-bottom: 1px solid white;
+          line-height: 70px;
+          a {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .footer-icon {
+      height: 220px;
+      .left-content {
+        text-align: center;
+        display: block;
+        width: 100%;
+      }
+
+      .right-content {
+        display: block;
+        line-height: 20px;
+        text-align: center;
+        font-size: 12px;
       }
     }
   }

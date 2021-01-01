@@ -1,4 +1,7 @@
 // desktop
+* {
+  box-sizing: border-box;
+}
 
 // aタグをリセット
 a {
@@ -62,6 +65,9 @@ header {
   .top-img {
     position: absolute;
     z-index: 9;
+    img {
+      width: 100%;
+    }
   }
 
   // top banner画像後ろの黒四角重ね表示, サイズ, 色設定
@@ -114,17 +120,29 @@ header {
   .sm-container {
     top: 120px;
 
+    img {
+      width: 100%;
+    }
+
     .text-content {
       background-color: rgba(255,255,255,0.9);
       // for debug
       // background-color: pink;
 
-      width: 625px;
+      width: 590px + 45px;
+      height: 387px + 30px;
       padding: 0 45px 0 30px;
 
       position: absolute;
-      top: 110px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto 0;
+      // top: 110px;
       left: 50px;
+      // top: 0;
+      // bottom: 0;
+      // margin: auto 0;
 
       h1 {
         font-size: 32px;
@@ -140,7 +158,7 @@ header {
 
       // more btnの位置調整
       .more-btn {
-        margin: 70px 0 50px 0;
+        margin: 50px 0;
       }
 
     }
@@ -151,31 +169,38 @@ header {
   background-color: #F0F0F0;
   padding: 185px 0 60px 0;
 
-  .item-left {
-    padding-right: 60px;
-  }
+  .sm-container {
+    display: flex;
+    flex-wrap: wrap;
+    .item-left {
+      padding-right: 60px;
+    }
 
-  .item {
-    display: inline-block;
-    width: 47%;
-
-    img {
+    .item {
+      display: inline-block;
+      // width: 49%;
       margin-top: 40px;
-    }
 
-    > p {
-      margin: 35px 0;
-    }
+      img {
+        margin-top: 40px;
+        width: 100%;
+        // padding-right: 60px;
+      }
 
-    h1 {
-      font-size: 32px;
-      font-weight: normal;
+      > p {
+        margin: 35px 0;
+      }
+
+      h1 {
+        font-size: 32px;
+        font-weight: normal;
+      }
     }
   }
 }
 
 .latest-topics {
-  height: 352px;
+  height: 352px + 65px + 65px;
   padding: 65px;
 
   .sm-container {
@@ -185,7 +210,8 @@ header {
     }
 
     .topics {
-      width: 700px;
+      // width: 700px;
+      width: 100%;
       margin: 0 0 0 auto;
       .topic {
         border-bottom: 1px solid gray;
@@ -207,7 +233,7 @@ header {
 
     .more-btn {
       display: block;
-      width: 77px;
+      width: 79px + 30px + 84px;
       margin: 30px 0 0 auto;
     }
   }
@@ -217,16 +243,20 @@ header {
   background-color: #F0F0F0;
   height: 570px;
   .sm-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
     .left-content {
-      float: left;
+      // float: left;
       padding-top: 140px;
+      margin-right: 40px;
       h1 {
         font-size: 32px;
         font-weight: normal;
       }
 
       .text-content {
-        font-size: 16px;
+        font-size: 12px;
         margin-top: 40px;
 
         p {
@@ -240,7 +270,7 @@ header {
     }
 
     .right-content {
-      float: right;
+      // float: right;
       padding-top: 60px;
     }
   }
@@ -257,7 +287,8 @@ footer {
 }
 
 // tablet
-@media screen and (max-width: 1020px) and (min-width: 768px) {
+// @media screen and (max-width: 1020px) and (min-width: 768px) {
+@media screen and (max-width: 1020px) {
   header {
     .left-content {
       margin: 33px 25px;
@@ -272,13 +303,17 @@ footer {
     $top-banner-height: 1024px;
     height: $top-banner-height;
 
-    img {
-      width: 600px;
-      height: 890px;
-      object-fit: cover;
+    .top-img {
+      img {
+        // width: 600px;
+        width: 80%;
+        height: 890px;
+        object-fit: cover;
+      }
     }
     .bg-shape {
-      width: 562px;
+      // width: 562px;
+      width: 80%;
       height: $top-banner-height;
     }
 
@@ -311,8 +346,10 @@ footer {
         height: 479px;
       }
       .text-content {
-        top: 35px;
-        left: 40px;
+        width: 80%;
+        left: 0;
+        right: 0;
+        margin: auto auto;
       }
     }
   }
@@ -323,20 +360,60 @@ footer {
     .sm-container {
       .item-left {
         margin-bottom: 80px;
+        padding-right: 0;
       }
 
       .item {
         h1 {
           font-weight: 900;
         }
+
+        img {
+          padding-right: 60px;
+        }
       }
     }
   }
 
   .latest-topics {
+    padding-left: 30px;
     .sm-container {
       .topics, .more-btn {
         margin-left: 0;
+      }
+    }
+  }
+
+  .contact {
+    height: 733px;
+    padding-left: 30px;
+    .sm-container {
+      flex-direction: row;
+      .right-content {
+        // float: none;
+        padding-top: 40px;
+        img {
+          // width: 520;
+          width: 100%;
+          height: 350px;
+        }
+      }
+
+      .left-content {
+        // float: none;
+        padding: 0;
+
+        h1 {
+          padding: 30px 0;
+        }
+
+        .text-content {
+          margin: 0;
+        }
+
+        .more-btn {
+          margin: 30px 0;
+        }
       }
     }
   }
@@ -344,4 +421,24 @@ footer {
 
 // smart phone
 @media screen and (max-width: 767px) {
+  .contact {
+    .sm-container {
+      .right-content {
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  .about-us {
+    .sm-container {
+      .text-content {
+        height: 441px;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }

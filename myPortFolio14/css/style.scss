@@ -421,6 +421,26 @@ footer {
 
 // smart phone
 @media screen and (max-width: 767px) {
+  header {
+    .container {
+      .left-content {
+        a {
+          img {
+            width: 189px;
+          }
+        }
+      }
+    }
+  }
+
+  .top-banner {
+    .container {
+      .top-text-content {
+        right: 40px;
+      }
+    }
+  }
+
   .contact {
     .sm-container {
       .right-content {
@@ -433,10 +453,15 @@ footer {
 
   .about-us {
     .sm-container {
+      height: 541px;
+      img {
+        height: 100%;
+      }
       .text-content {
-        height: 441px;
+        height: 481px;
         p {
           font-size: 14px;
+          line-height:25px;
         }
       }
     }

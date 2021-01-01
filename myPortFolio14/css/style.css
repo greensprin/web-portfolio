@@ -374,14 +374,27 @@ footer .container {
 }
 
 @media screen and (max-width: 767px) {
+  header .container .left-content a img {
+    width: 189px;
+  }
+  .top-banner .container .top-text-content {
+    right: 40px;
+  }
   .contact .sm-container .right-content img {
     width: 90%;
   }
+  .about-us .sm-container {
+    height: 541px;
+  }
+  .about-us .sm-container img {
+    height: 100%;
+  }
   .about-us .sm-container .text-content {
-    height: 441px;
+    height: 481px;
   }
   .about-us .sm-container .text-content p {
     font-size: 14px;
+    line-height: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

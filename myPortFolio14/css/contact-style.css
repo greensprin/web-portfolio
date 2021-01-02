@@ -1,0 +1,168 @@
+.top-banner {
+  height: 451px;
+}
+
+.top-banner .container .bg-shape {
+  height: 451px;
+}
+
+.top-banner .container .top-text-content {
+  right: 146px;
+}
+
+.top-banner .container .top-text-content h1 {
+  margin-top: 13px;
+  font-size: 20px;
+}
+
+.top-banner .container .top-text-content h2 {
+  padding-top: 4px;
+  letter-spacing: 4.5px;
+}
+
+.hissu {
+  color: white;
+  background-color: black;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.design-box {
+  margin: 2px 45px;
+  display: inline-block;
+  line-height: 30px;
+}
+
+.design-box:before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.design-box:after {
+  content: "";
+  display: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: black;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+}
+
+.contact-content {
+  margin: 120px 0;
+}
+
+.contact-content .contact-container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-content .contact-container > p {
+  line-height: 32px;
+  margin-bottom: 52px;
+  font-size: 16px;
+  font-family: "Noto Sans JP";
+}
+
+.contact-content .contact-container .contact-select .hissu {
+  margin-left: 20px;
+}
+
+.contact-content .contact-container .contact-select .selecter {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.contact-content .contact-container .contact-select .selecter .select-elem {
+  display: inline-block;
+  position: relative;
+}
+
+.contact-content .contact-container .contact-select .selecter .select-elem input[type="radio"] {
+  display: none;
+}
+
+.contact-content .contact-container .contact-select .selecter .select-elem input[type=radio]:checked + label:after {
+  display: inline-block;
+}
+
+.contact-content .contact-container .input-elem {
+  margin-top: 52px;
+}
+
+.contact-content .contact-container .input-elem input[type=text] {
+  width: 100%;
+  height: 41px;
+  margin-top: 10px;
+  padding: 4px 10px;
+  font-size: 16px;
+  font-family: "Noto Sans JP";
+}
+
+.contact-content .contact-container .input-elem .hissu-name {
+  margin-left: 50px;
+}
+
+.contact-content .contact-container .input-elem .hissu-addr {
+  margin-left: 50px;
+}
+
+.contact-content .contact-container .input-elem textarea {
+  resize: none;
+  overflow: auto;
+  margin-top: 10px;
+  padding: 4px 10px;
+  width: 100%;
+  height: 210px;
+  font-size: 16px;
+  font-family: "Noto Sans JP";
+}
+
+.contact-content .contact-container .input-elem h1 {
+  font-size: 16px;
+  letter-spacing: 0px;
+}
+
+.contact-content .contact-container .check {
+  margin: 42px 0;
+  text-align: center;
+  position: relative;
+}
+
+.contact-content .contact-container .check input[type=checkbox] {
+  display: none;
+}
+
+.contact-content .contact-container .check .design-box:before {
+  border-radius: 0;
+  left: 100px;
+}
+
+.contact-content .contact-container .check .design-box:after {
+  border-radius: 0;
+  left: 106px;
+}
+
+.contact-content .contact-container .check input[type=checkbox]:checked + label:after {
+  display: inline-block;
+}
+
+.contact-content .contact-container .more-btn {
+  display: block;
+  padding: 12px 50px;
+  margin: 0 auto;
+  width: 22%;
+}
+/*# sourceMappingURL=contact-style.css.map */

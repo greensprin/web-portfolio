@@ -455,31 +455,68 @@ footer {
   header {
     .container {
       .left-content {
+        margin: 20px 15px;
         a {
           img {
             width: 189px;
           }
         }
       }
+
+      .right-content {
+        margin: 25px 15px;
+      }
     }
   }
 
   .top-banner {
+    $top-banner-height: 667px;
+    height: $top-banner-height;
     .container {
+      .top-img {
+        width: 76.5%;
+        height: 580px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .bg-shape {
+        width: 76.5%;
+        height: $top-banner-height;
+      }
+
       .top-text-content {
-        right: 40px;
+        top: 175px;
+        right: 16px;
+
       }
     }
   }
 
   .contact {
+    padding-left: 15px;
+    height: 622px;
     .sm-container {
       .right-content {
+        padding-top: 38px;
         img {
-          width: 90%;
+          height: 232px;
+          width: 345px;
+        }
+      }
+
+      .left-content {
+        .more-btn {
+          margin: 23px 0;
         }
       }
     }
+  }
+
+  .hd-text {
+    font-size: 28px;
   }
 
   .about-us {
@@ -489,11 +526,54 @@ footer {
         height: 100%;
       }
       .text-content {
-        height: 481px;
+        width: 92%;
+        height: 441px;
+        padding: 0 15px 0 30px;
+        h1 {
+          padding-top: 51px;
+        }
         p {
-          font-size: 14px;
+          font-size: 12px;
           line-height:25px;
         }
+        .more-btn {
+          margin: 94px 0;
+        }
+      }
+    }
+  }
+
+  .works-culture {
+    padding: 102px 0 40px 15px;
+    .sm-container {
+      .item {
+        margin-top: 0;
+        img {
+          margin-top: 33px;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+
+  .latest-topics {
+    padding: 40px 15px 0 15px;
+    height: 408px;
+    .sm-container {
+      .topics {
+        width: 100%;
+        .topic {
+          .text-content {
+            font-size: 11px;
+          }
+        }
+      }
+
+      .more-btn {
+        display: inline-block;
+        width: 157px;
+        margin-top: 16px;
+        padding: 12px 0;
       }
     }
   }

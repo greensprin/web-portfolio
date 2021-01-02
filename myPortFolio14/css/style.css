@@ -400,14 +400,50 @@ footer .container {
 }
 
 @media screen and (max-width: 767px) {
+  header .container .left-content {
+    margin: 20px 15px;
+  }
   header .container .left-content a img {
     width: 189px;
   }
+  header .container .right-content {
+    margin: 25px 15px;
+  }
+  .top-banner {
+    height: 667px;
+  }
+  .top-banner .container .top-img {
+    width: 76.5%;
+    height: 580px;
+  }
+  .top-banner .container .top-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .top-banner .container .bg-shape {
+    width: 76.5%;
+    height: 667px;
+  }
   .top-banner .container .top-text-content {
-    right: 40px;
+    top: 175px;
+    right: 16px;
+  }
+  .contact {
+    padding-left: 15px;
+    height: 622px;
+  }
+  .contact .sm-container .right-content {
+    padding-top: 38px;
   }
   .contact .sm-container .right-content img {
-    width: 90%;
+    height: 232px;
+    width: 345px;
+  }
+  .contact .sm-container .left-content .more-btn {
+    margin: 23px 0;
+  }
+  .hd-text {
+    font-size: 28px;
   }
   .about-us .sm-container {
     height: 541px;
@@ -416,11 +452,45 @@ footer .container {
     height: 100%;
   }
   .about-us .sm-container .text-content {
-    height: 481px;
+    width: 92%;
+    height: 441px;
+    padding: 0 15px 0 30px;
+  }
+  .about-us .sm-container .text-content h1 {
+    padding-top: 51px;
   }
   .about-us .sm-container .text-content p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 25px;
+  }
+  .about-us .sm-container .text-content .more-btn {
+    margin: 94px 0;
+  }
+  .works-culture {
+    padding: 102px 0 40px 15px;
+  }
+  .works-culture .sm-container .item {
+    margin-top: 0;
+  }
+  .works-culture .sm-container .item img {
+    margin-top: 33px;
+    padding-right: 15px;
+  }
+  .latest-topics {
+    padding: 40px 15px 0 15px;
+    height: 408px;
+  }
+  .latest-topics .sm-container .topics {
+    width: 100%;
+  }
+  .latest-topics .sm-container .topics .topic .text-content {
+    font-size: 11px;
+  }
+  .latest-topics .sm-container .more-btn {
+    display: inline-block;
+    width: 157px;
+    margin-top: 16px;
+    padding: 12px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

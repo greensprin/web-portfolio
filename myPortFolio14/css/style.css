@@ -35,16 +35,27 @@ header .left-content {
 
 header .right-content {
   float: right;
-  margin: 30px 58px;
+  margin: 37px 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 12px;
 }
 
 header .right-content img {
-  display: inline-block;
+  height: 12px;
+  margin-right: 6px;
 }
 
 header .right-content p {
-  display: inline-block;
   color: white;
+  font-size: 10px;
+  font-weight: 900;
+  font-family: Montserrat;
+  height: 10px;
 }
 
 .top-banner {
@@ -75,22 +86,25 @@ header .right-content p {
   position: absolute;
   z-index: 10;
   top: 160px;
-  right: 245px;
+  right: 193px;
   color: white;
 }
 
 .top-banner .top-text-content h1 {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: YuGothic;
+  line-height: 25px;
 }
 
 .top-banner .top-text-content h2 {
   font-size: 72px;
-  padding-top: 35px;
+  padding-top: 15px;
+  font-family: Montserrat;
 }
 
 .more-btn {
-  padding: 10px 42px;
+  padding: 12px 41px;
   display: inline-block;
   text-align: center;
   color: white;
@@ -113,10 +127,10 @@ header .right-content p {
 }
 
 .about-us .sm-container .text-content {
-  background-color: rgba(255, 255, 255, 0.9);
-  width: 635px;
-  height: 417px;
-  padding: 0 45px 0 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 590px;
+  height: 386px;
+  padding: 0 0 0 30px;
   position: absolute;
   top: 0;
   left: 0;
@@ -128,22 +142,25 @@ header .right-content p {
 .about-us .sm-container .text-content h1 {
   font-size: 32px;
   font-weight: normal;
-  padding: 46px 0;
+  padding: 52px 0 30px 0;
+  font-family: Montserrat;
+  letter-spacing: 2px;
+  color: #333333;
 }
 
 .about-us .sm-container .text-content > p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 30px;
   font-family: "Noto Sans JP";
 }
 
 .about-us .sm-container .text-content .more-btn {
-  margin: 50px 0;
+  margin: 65px 0;
 }
 
 .works-culture {
   background-color: #F0F0F0;
-  padding: 185px 0 60px 0;
+  padding: 145px 0 60px 0;
 }
 
 .works-culture .sm-container {
@@ -164,17 +181,21 @@ header .right-content p {
 }
 
 .works-culture .sm-container .item img {
-  margin-top: 40px;
+  margin-top: 32px;
   width: 100%;
 }
 
 .works-culture .sm-container .item > p {
-  margin: 35px 0;
+  margin: 30px 0;
+  font-size: 14px;
 }
 
 .works-culture .sm-container .item h1 {
   font-size: 32px;
   font-weight: normal;
+  font-family: Montserrat;
+  letter-spacing: 2px;
+  color: #333333;
 }
 
 .latest-topics {
@@ -185,16 +206,19 @@ header .right-content p {
 .latest-topics .sm-container h1 {
   font-size: 32px;
   font-weight: normal;
+  font-family: Montserrat;
+  letter-spacing: 2px;
+  color: #333333;
 }
 
 .latest-topics .sm-container .topics {
-  width: 100%;
+  width: 700px;
   margin: 0 0 0 auto;
 }
 
 .latest-topics .sm-container .topics .topic {
-  border-bottom: 1px solid gray;
-  margin-top: 35px;
+  border-bottom: 2px solid gray;
+  margin-top: 33px;
 }
 
 .latest-topics .sm-container .topics .topic .date {
@@ -205,21 +229,21 @@ header .right-content p {
 
 .latest-topics .sm-container .topics .topic .text-content {
   display: inline-block;
-  padding: 15px 0;
-  font-size: 14px;
+  padding: 13px 0;
+  font-size: 12px;
   font-weight: bold;
   color: #333333;
 }
 
 .latest-topics .sm-container .more-btn {
   display: block;
-  width: 193px;
-  margin: 30px 0 0 auto;
+  width: 188px;
+  margin: 25px 0 0 auto;
 }
 
 .contact {
   background-color: #F0F0F0;
-  height: 570px;
+  height: 555px;
 }
 
 .contact .sm-container {
@@ -232,33 +256,39 @@ header .right-content p {
           flex-direction: row-reverse;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact .sm-container .left-content {
-  padding-top: 140px;
+  padding-top: 120px;
   margin-right: 40px;
 }
 
 .contact .sm-container .left-content h1 {
   font-size: 32px;
   font-weight: normal;
+  font-family: Montserrat;
+  letter-spacing: 2px;
+  color: #333333;
 }
 
 .contact .sm-container .left-content .text-content {
-  font-size: 12px;
-  margin-top: 40px;
+  font-size: 14px;
+  margin-top: 30px;
 }
 
 .contact .sm-container .left-content .text-content p {
-  line-height: 35px;
+  line-height: 32px;
 }
 
 .contact .sm-container .left-content .more-btn {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .contact .sm-container .right-content {
-  padding-top: 60px;
+  padding-top: 45px;
 }
 
 footer {
@@ -268,7 +298,7 @@ footer {
 footer .container {
   text-align: center;
   color: white;
-  line-height: 50px;
+  line-height: 51px;
   font-size: 10px;
 }
 

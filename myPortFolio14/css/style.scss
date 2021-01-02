@@ -25,6 +25,15 @@ a {
   position: relative;
 }
 
+// 各コンテンツの見出し部分の設定
+.hd-text {
+  font-size: 32px;
+  font-weight: normal;
+  font-family: Montserrat;
+  letter-spacing: 2px;
+  color: #333333;
+}
+
 header {
   width: 100%;
   // top-bannerの上にヘッダーが表示されるようにするための設定
@@ -158,12 +167,7 @@ header {
       // margin: auto 0;
 
       h1 {
-        font-size: 32px;
-        font-weight: normal;
         padding: 52px 0 30px 0;
-        font-family: Montserrat;
-        letter-spacing: 2px;
-        color: #333333;
       }
 
       > p {
@@ -208,13 +212,6 @@ header {
         font-size: 14px;
       }
 
-      h1 {
-        font-size: 32px;
-        font-weight: normal;
-        font-family: Montserrat;
-        letter-spacing: 2px;
-        color: #333333;
-      }
     }
   }
 }
@@ -224,13 +221,6 @@ header {
   padding: 65px;
 
   .sm-container {
-    h1 {
-      font-size: 32px;
-      font-weight: normal;
-      font-family: Montserrat;
-      letter-spacing: 2px;
-      color: #333333;
-    }
 
     .topics {
       width: 700px;
@@ -274,13 +264,6 @@ header {
       // float: left;
       padding-top: 120px;
       margin-right: 40px;
-      h1 {
-        font-size: 32px;
-        font-weight: normal;
-        font-family: Montserrat;
-        letter-spacing: 2px;
-        color: #333333;
-      }
 
       .text-content {
         font-size: 14px;
@@ -318,11 +301,14 @@ footer {
 @media screen and (max-width: 1020px) {
   header {
     .left-content {
-      margin: 33px 25px;
+      margin: 34px 30px;
+      img {
+        width: 189px;
+      }
     }
 
     .right-content {
-      margin: 33px 25px;
+      margin: 38px 30px;
     }
   }
 
@@ -333,33 +319,37 @@ footer {
     .top-img {
       img {
         // width: 600px;
-        width: 80%;
-        height: 890px;
+        // width: 78%;
+      width: 78%;
+      height: 890px;
         object-fit: cover;
       }
     }
     .bg-shape {
       // width: 562px;
-      width: 80%;
+      width: 73%;
       height: $top-banner-height;
     }
 
     .top-text-content {
       top: 330px;
-      right: 80px;
+      right: 75px;
 
       h1 {
-        font-size: 16px;
+        font-size: 15px;
+        line-height: 23px;
       }
 
       .big-string {
-        padding-top: 25px;
+        padding-top: 15px;
       }
 
       h2 {
         font-size: 56px;
         font-weight: 900;
         padding-top: 0px;
+        letter-spacing: 4px;
+        line-height: 53px;
       }
     }
   }
@@ -373,20 +363,29 @@ footer {
         height: 479px;
       }
       .text-content {
-        width: 80%;
+        width: 77%;
+        height: 360px;
         left: 0;
         right: 0;
         margin: auto auto;
+
+        h1 {
+          padding: 46px 0 30px 0;
+        }
+
+        .more-btn {
+          margin: 55px 0;
+        }
       }
     }
   }
 
   .works-culture {
-    padding: 60px 0 40px 30px;
+    padding: 25px 0 40px 30px;
 
     .sm-container {
       .item-left {
-        margin-bottom: 80px;
+        margin-bottom: 43px;
         padding-right: 0;
       }
 
@@ -403,10 +402,15 @@ footer {
   }
 
   .latest-topics {
-    padding-left: 30px;
+    height: 420px;
+    padding: 40px 30px 0 30px;
     .sm-container {
       .topics, .more-btn {
         margin-left: 0;
+      }
+
+      .more-btn {
+        margin-top: 30px;
       }
     }
   }
@@ -421,7 +425,7 @@ footer {
         padding-top: 40px;
         img {
           // width: 520;
-          width: 100%;
+          width: 90%;
           height: 350px;
         }
       }

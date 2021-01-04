@@ -37,6 +37,12 @@
       <!-- 黒色の背景色を範囲限定でつけるためのdiv -->
       <div class="bg-shape"></div>
 
+      <!-- smart phoneサイズの時にSCROLLと表示 -->
+      <div class="scroll-bar">
+        <div class="bar"></div>
+        <h1>SCROLL</h1>
+      </div>
+
       <!-- top bannerの文字 -->
       <div class="top-text-content">
         <h2>CONTACT</h2>
@@ -94,7 +100,7 @@
         <input type="text">
       </div>
       <div class="input-elem">
-        <p>お問い合わせ内容</p>
+        <p>お問い合わせ内容<span class="hissu hissu-naiyo">必須</span></p>
         <textarea></textarea>
       </div>
       <div class="input-elem">
@@ -132,6 +138,7 @@
       <!-- チェックボックス -->
       <div class="check">
         <input type="checkbox" id="checkbox1">
+        <span class="fa fa-check check-mark"></span>
         <label for="checkbox1" class="design-box">個人情報の取り扱いについて同意のうえ送信します。</label>
       </div>
       <!-- 送信ボタン -->

@@ -110,10 +110,10 @@ header {
 .top-wrapper {
   .container {
     // debug
-    background-color: rgb(192, 192, 192);
+    // background-color: rgb(192, 192, 192);
     // background
-    // background-image: url();
-    // background-size: cover;
+    background-image: url("../img/banner-904884__340.webp");
+    background-size: cover;
     // size
     height: 500px;
     // margin padding
@@ -130,6 +130,8 @@ header {
       h1 {
         // font
         font-size: 32px;
+        // color
+        color: white;
       }
     }
   }
@@ -279,11 +281,33 @@ footer {
   .top-wrapper {
     .container {
       margin-top: 50px;
+      .text-content {
+        top: 230px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+      }
     }
   }
 
   .item-wrapper {
     margin-left: 15px;
+    .container {
+      #works {
+        .works-elems {
+          flex-direction: column;
+          .works-elem {
+            margin: 30px;
+          }
+        }
+      }
+      #skills {
+        .skill-elems {
+          flex-direction: column;
+        }
+      }
+    }
   }
 
   .goto-top {

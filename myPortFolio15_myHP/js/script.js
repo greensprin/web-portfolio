@@ -35,11 +35,39 @@ $(function() {
     } else {
       $(".goto-top").slideUp();
     }
-
   })
 
   $(".goto-top").on("click", function() {
     // ページ先頭に移動
     $("html, body").animate({scrollTop:0});
   });
+
+  // barをクリックしたら、navを表示する
+  $(".fa-bars").on("click", function() {
+    $("#header-nav").slideDown();
+  })
+
+  // 最初の画面サイズでnavにクラス追加する
+  if ($(window).width() <= 767) { // smartphoneサイズの挙動
+    $(".hlist-items").addClass("drop-nav");
+  } else { // PCサイズの挙動
+    $(".hlist-items").removeClass("drop-nav");
+  }
+
+  $(".hlist-items").on("click", function() {
+    if ($(window).width() <= 787) {
+      $("#header-nav").slideUp();
+    }
+  })
+
+  // 画面更新があったときの挙動
+  $(window).resize(function() {
+    // headerのサイズを再定義
+    header_size = $("header .container").height() + 10;
+
+    if ($(window).width() <= 767) { // smartphoneサイズの挙動
+    } else { // PCサイズの挙動
+      $("#header-nav").slideDown();
+    }
+  })
 })

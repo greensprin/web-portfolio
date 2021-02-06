@@ -1,0 +1,96 @@
+// desktop
+* {
+  box-sizing: border-box;
+}
+
+input {
+  height: 25px;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  .container {
+    background-color: gray;
+    h1 {
+      text-align: center;
+      color:white;
+      padding: 10px 0;
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+  }
+}
+
+.item-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+
+  .item-name {
+    width: 30%;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+  }
+
+  .items {
+    margin-left: 100px;
+    width: 60%;
+
+    .item {
+      p {
+        font-weight: bold;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+.sale-wrapper {
+  input {
+    margin: 10px 0;
+  }
+}
+
+.result-wrapper {
+  .container {
+    .item-wrapper {
+      .item {
+        display: flex;
+      }
+      .elem-name {
+        width: 100px;
+      }
+      .res-text {
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.calc {
+  text-align: center;
+}
+
+footer {
+  padding-top: 30px;
+  .container {
+    p {
+      text-align: center;
+      color: gray;
+    }
+  }
+}
+
+// tablet
+@media screen and (max-width: 1020px) and (min-width: 768px) {
+}
+
+// smart phone
+@media screen and (max-width: 767px) {
+}

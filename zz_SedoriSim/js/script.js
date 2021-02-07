@@ -4,6 +4,10 @@ $(function() {
     const purchasing = Number($(".purchasing").val());
     // 送料
     const purchasing_shipping = Number($(".purchasing-shipping").val());
+    // ポイント
+    const point_rt = Number($(".point-rt").val()) / 100;
+    // 割引
+    const discount = Number($(".discount").val());
     // 売値
     const sell_price = Number($(".sell-price").val());
     // 販路
@@ -14,7 +18,15 @@ $(function() {
     const materials = Number($(".materials").val());
 
     // 計算
-    let [profit, profit_ratio, roi] = calc_profit(purchasing, purchasing_shipping, sell_price, sales_ch, ship_method, materials);
+    let [profit, profit_ratio, roi] = calc_profit(purchasing,
+                                                  purchasing_shipping,
+                                                  sell_price,
+                                                  sales_ch,
+                                                  ship_method,
+                                                  materials,
+                                                  point_rt,
+                                                  discount
+                                                  );
 
     // 結果代入
     $(".profit").text(profit + " 円");
@@ -24,7 +36,15 @@ $(function() {
   });
 })
 
-function calc_profit(purchasing, purchasing_shipping, sell_price, sales_ch, ship_method, materials) {
+function calc_profit(purchasing,
+                     purchasing_shipping,
+                     sell_price,
+                     sales_ch,
+                     ship_method,
+                     materials,
+                     point_rt,
+                     discount
+) {
   var profit = 0;
   var profit_ratio = 0;
   var roi = {};
@@ -50,7 +70,8 @@ function calc_profit(purchasing, purchasing_shipping, sell_price, sales_ch, ship
   var haiso = ship_method_ary[ship_method];
 
   // 投資額
-  const invest_amount = purchasing + purchasing_shipping + (sell_price * tesu) + haiso + materials;
+  const point = purchasing * point_rt;
+  const invest_amount = (purchasing - discount - point) + purchasing_shipping + (sell_price * tesu) + haiso + materials;
 
   // 利益計算
   profit = sell_price - invest_amount;
@@ -62,9 +83,11 @@ function calc_profit(purchasing, purchasing_shipping, sell_price, sales_ch, ship
   // console.log(sales_ch_ary[sales_ch], ship_method_ary[ship_method])
   // console.log(invest_amount, profit, profit_ratio);
 
+  $(".get-point").text(point + "円");
+
   for (let i = 0; i <= 100; i += 5) {
     var roi_rt = i / 100;
-    roi[i] = Math.round((roi_rt + 1) / ((1 - tesu) - (tesu * roi_rt)) * (purchasing + purchasing_shipping + haiso + materials));
+    roi[i] = Math.round((roi_rt + 1) / ((1 - tesu) - (tesu * roi_rt)) * ((purchasing - discount - point) + purchasing_shipping + haiso + materials));
     $(".roi" + String(i/5)).text(String(i) + "%: " + roi[i] + " 円");
     // console.log(String(i) + "%", roi);
   }

@@ -15,7 +15,19 @@ input {
 
 header {
   .container {
+    position: relative;
+    .readme {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      color: gray;
+      border-bottom: 1px solid gray;
+    }
+
     background-color: gray;
+    a {
+      text-decoration: none;
+    }
     h1 {
       text-align: center;
       color:white;
@@ -55,6 +67,11 @@ header {
   input {
     margin: 10px 0;
   }
+
+  a {
+    display: block;
+    margin-top: 10px;
+  }
 }
 
 .result-wrapper {
@@ -85,6 +102,15 @@ footer {
       color: gray;
     }
   }
+}
+
+.haiso-item, .readme-item {
+  padding: 20px 30px;
+}
+
+.hissu {
+  color: red;
+  font-size: 12px;
 }
 
 // tablet

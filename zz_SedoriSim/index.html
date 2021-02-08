@@ -12,7 +12,8 @@
 <body>
   <header>
     <div class="container">
-      <h1>せどり利益Simulator</h1>
+      <a href="readme.html" class="readme">使い方</a>
+      <a href="index.html"><h1>せどり利益Simulator</h1></a>
     </div>
   </header>
 
@@ -25,7 +26,7 @@
         </div>
         <div class="items">
           <div class="item">
-            <p>仕入れ値</p>
+            <p>仕入れ値<span class="hissu">【必須】</span></p>
             <input type="number" class="purchasing">
           </div>
           <div class="item">
@@ -58,19 +59,20 @@
             <input type="number" class="sell-price">
           </div>
           <div class="item">
-            <p>販路</p>
-            <div><input type="radio" name="sales-channel" id="sales-channel1" value="merkari"><label for="sales-channel1">メルカリ</label></div>
-            <div><input type="radio" name="sales-channel" id="sales-channel2" value="rakuma"><label for="sales-channel2">ラクマ</label></div>
-            <div><input type="radio" name="sales-channel" id="sales-channel3" value="paypay"><label for="sales-channel3">paypayフリマ</label></div>
+            <p>販路 (手数料)<span class="hissu">【必須】</span></p>
+            <div><input type="radio" name="sales-channel" id="sales-channel1" value="merkari"><label for="sales-channel1">メルカリ (10%)</label></div>
+            <div><input type="radio" name="sales-channel" id="sales-channel2" value="rakuma"><label for="sales-channel2">ラクマ (6%)</label></div>
+            <div><input type="radio" name="sales-channel" id="sales-channel3" value="paypay"><label for="sales-channel3">paypayフリマ (5%)</label></div>
           </div>
           <div class="item">
-            <p>配送方法</p>
-            <div><input type="radio" name="shipping-method" id="shipping-method1" value="teikeigai"><label for="shipping-method1">定形外郵便</label></div>
-            <div><input type="radio" name="shipping-method" id="shipping-method2" value="yu_packet"><label for="shipping-method2">ゆうパケット</label></div>
-            <div><input type="radio" name="shipping-method" id="shipping-method3" value="yu_packet_plus"><label for="shipping-method3">ゆうパケットプラス</label></div>
-            <div><input type="radio" name="shipping-method" id="shipping-method4" value="yu_pack_60"><label for="shipping-method4">ゆうパック60</label></div>
-            <div><input type="radio" name="shipping-method" id="shipping-method5" value="yu_pack_80"><label for="shipping-method5">ゆうパック80</label></div>
-            <div><input type="radio" name="shipping-method" id="shipping-method6" value="yu_pack_100"><label for="shipping-method6">ゆうパック100</label></div>
+            <p>配送方法 (料金)<span class="hissu">【必須】</span></p>
+            <!-- <div><input type="radio" name="shipping-method" id="shipping-method1" value="teikeigai"><label for="shipping-method1">定形外郵便</label></div> -->
+            <div><input type="radio" name="shipping-method" id="shipping-method2" value="yu_packet"><label for="shipping-method2">ゆうパケット/ゆうパケットポスト (200円)</label></div>
+            <div><input type="radio" name="shipping-method" id="shipping-method3" value="yu_packet_plus"><label for="shipping-method3">ゆうパケットプラス (375円)</label></div>
+            <div><input type="radio" name="shipping-method" id="shipping-method4" value="yu_pack_60"><label for="shipping-method4">ゆうパック60 (700円)</label></div>
+            <div><input type="radio" name="shipping-method" id="shipping-method5" value="yu_pack_80"><label for="shipping-method5">ゆうパック80 (800円)</label></div>
+            <div><input type="radio" name="shipping-method" id="shipping-method6" value="yu_pack_100"><label for="shipping-method6">ゆうパック100 (1000円)</label></div>
+            <a href="haiso.html">配送サイズについて</a>
           </div>
         </div>
       </div>

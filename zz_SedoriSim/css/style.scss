@@ -24,6 +24,14 @@ header {
       border-bottom: 1px solid gray;
     }
 
+    .calculator {
+      position: absolute;
+      top: 85px;
+      right: 0;
+      color: gray;
+      border-bottom: 1px solid gray;
+    }
+
     background-color: gray;
     a {
       text-decoration: none;
@@ -111,6 +119,22 @@ footer {
 .hissu {
   color: red;
   font-size: 12px;
+}
+
+.calc-wrapper {
+  .container {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #calc-res {
+    width: 270px;
+  }
+  .num-button {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+  }
 }
 
 // tablet

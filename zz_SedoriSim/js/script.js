@@ -1,4 +1,19 @@
 $(function() {
+  $(".num-button").on("click", function() {
+    var val = $(this).val();
+    var cul_val = $("#calc-res").val();
+    console.log(val, cul_val);
+    if (val === "=") {
+      if (cul_val !== undefined) {
+        $("#calc-res").val(new Function("return " + String(cul_val))());
+      }
+    } else if (val === "c") {
+        $("#calc-res").val("");
+    } else {
+      $("#calc-res").val(String(cul_val) + String(val));
+    }
+  })
+
   $(".calc-val").on("click", function() {
     // 仕入れ値
     const purchasing = Number($(".purchasing").val());

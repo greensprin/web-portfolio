@@ -8,7 +8,11 @@ $(function() {
         $("#calc-res").val(new Function("return " + String(cul_val))());
       }
     } else if (val === "c") {
-        $("#calc-res").val("");
+      $("#calc-res").val("");
+    } else if (val === "←") {
+      if (cul_val !== undefined) {
+        $("#calc-res").val(cul_val.split("").slice(0, -1).join(""));
+      }
     } else {
       $("#calc-res").val(String(cul_val) + String(val));
     }

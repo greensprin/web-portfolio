@@ -102,6 +102,7 @@ function calc_profit(purchasing,
   // console.log(sales_ch_ary[sales_ch], ship_method_ary[ship_method])
   // console.log(invest_amount, profit, profit_ratio);
 
+  $(".investment-amount").text(invest_amount + "円");
   $(".get-point").text(point + "円");
 
   for (let i = 0; i <= 100; i += 5) {

@@ -14,6 +14,9 @@ body {
 
 input {
   height: 25px;
+  border: none;
+  outline: none;
+  background-color: #F2F2F2;
 }
 
 .container {
@@ -162,6 +165,7 @@ header {
 .sale-wrapper {
   input {
     margin: 10px 0;
+    margin-right: 5px;
   }
 
   a {
@@ -188,6 +192,18 @@ header {
 
 .calc {
   text-align: center;
+
+  input {
+    height: 40px;
+    width: 100px;
+    box-shadow: 2px 2px 5px 0px gray;
+    font-weight: bold;
+    color: #444;
+
+    &:active {
+      box-shadow: none;
+    }
+  }
 }
 
 footer {

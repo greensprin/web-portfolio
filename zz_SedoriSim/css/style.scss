@@ -1,6 +1,15 @@
 // desktop
+
+$box-color: #A3B1C6;
+$box-color-light: #FFFFFF;
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  color: #777777;
+  background-color: #E0E5EC;
 }
 
 input {
@@ -32,16 +41,54 @@ header {
       border-bottom: 1px solid gray;
     }
 
-    background-color: gray;
+    // background-color: gray;
+    text-align: center;
+
     a {
       text-decoration: none;
     }
+
     h1 {
+      $width-size: 400px;
+      $height-size: 100px;
+      $border-radius-rt: 5%;
+      $boke-rt: 10px;
+
       text-align: center;
-      color:white;
+      color:#777777;
       padding: 10px 0;
       margin-bottom: 30px;
       font-size: 32px;
+
+      display: inline-block;
+      width: $width-size;
+      // height: $height-size;
+      border-radius: $border-radius-rt;
+      box-shadow: 2px 2px $boke-rt $box-color;
+
+      position: relative;
+
+      &:before {
+        content:"";
+        display: inline-block;
+        width:  $width-size;
+        height: $height-size;
+        // background-color: white;
+        border-radius: $border-radius-rt;
+        box-shadow: -2px -2px $boke-rt $box-color-light;
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+      &:hover {
+        box-shadow: -2px -2px $boke-rt $box-color-light inset;
+
+        &:before {
+          box-shadow: 2px 2px $boke-rt $box-color inset;
+        }
+      }
     }
   }
 }
@@ -56,6 +103,47 @@ header {
     font-weight: bold;
     text-align: right;
     margin-top: 10px;
+
+    h1 {
+      $width-size: 100px;
+      $height-size: 50px;
+      $border-radius-rt: 12%;
+      $boke-rt: 10px;
+      
+      display: inline-block;
+      width:  $width-size;
+      height: $height-size;
+      border-radius: $border-radius-rt;
+      // background-color: white;
+      box-shadow: 2px 2px $boke-rt $box-color;
+      text-align: center;
+      line-height: $height-size;
+      font-size: 26px;
+
+      position: relative;
+
+      &:before {
+        content:"";
+        display: inline-block;
+        width:  $width-size;
+        height: $height-size;
+        // background-color: white;
+        border-radius: $border-radius-rt;
+        box-shadow: -2px -2px $boke-rt $box-color-light;
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+      &:hover {
+        box-shadow: -2px -2px $boke-rt $box-color-light inset;
+
+        &:before {
+          box-shadow: 2px 2px $boke-rt $box-color inset;
+        }
+      }
+    }
   }
 
   .items {

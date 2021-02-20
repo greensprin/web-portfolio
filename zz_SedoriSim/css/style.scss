@@ -52,20 +52,22 @@ header {
     }
 
     h1 {
-      $width-size: 400px;
-      $height-size: 100px;
+      $width-size: 350px;
+      $height-size: 45px;
       $border-radius-rt: 5%;
       $boke-rt: 10px;
 
       text-align: center;
-      color:#777777;
+      // color:#777777;
+      color:#E0E5EC;
+      text-shadow: -2px -2px 2px rgb(170, 170, 170);
       padding: 10px 0;
       margin-bottom: 30px;
       font-size: 32px;
 
       display: inline-block;
       width: $width-size;
-      // height: $height-size;
+      height: $height-size;
       border-radius: $border-radius-rt;
       box-shadow: 2px 2px $boke-rt $box-color;
 

@@ -19,6 +19,10 @@ input {
   background-color: #F2F2F2;
 }
 
+input[type=number], input[type=text] {
+  box-shadow: 1px 1px 2px #BBB inset;
+}
+
 .container {
   max-width: 1140px;
   width: 100%;
@@ -87,7 +91,7 @@ header {
         bottom: 0;
       }
 
-      &:hover {
+      &:active {
         box-shadow: -2px -2px $boke-rt $box-color-light inset;
 
         &:before {
@@ -141,7 +145,7 @@ header {
         bottom: 0;
       }
 
-      &:hover {
+      &:active {
         box-shadow: -2px -2px $boke-rt $box-color-light inset;
 
         &:before {
@@ -168,6 +172,10 @@ header {
   input {
     margin: 10px 0;
     margin-right: 5px;
+  }
+
+  input[type=radio], label {
+    cursor: pointer;
   }
 
   a {
@@ -201,6 +209,7 @@ header {
     box-shadow: 2px 2px 5px 0px gray;
     font-weight: bold;
     color: #444;
+    cursor: pointer;
 
     &:active {
       box-shadow: none;
@@ -225,7 +234,7 @@ footer {
 }
 
 .hissu {
-  color: red;
+  color: rgb(255, 46, 46);
   font-size: 12px;
 }
 

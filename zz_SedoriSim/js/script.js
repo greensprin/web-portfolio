@@ -80,9 +80,9 @@ function calc_profit(purchasing,
     teikeigai:170,
     yu_packet:200,
     yu_packet_plus:380,
-    yu_pack_60:700,
-    yu_pack_80:800,
-    yu_pack_100:1000
+    yu_pack_60:770,
+    yu_pack_80:870,
+    yu_pack_100:1070
   };
 
   var tesu = sales_ch_ary[sales_ch];
